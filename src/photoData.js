@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Card, CardText, CardBody, CardTitle, CardImg, } from "reactstrap";
 
 export default function PhotoData(props){
     return(
@@ -12,3 +12,14 @@ export default function PhotoData(props){
     );
 }
 
+// export default function NewPhotoData(props){
+//     return(
+//         <Card height="100%"></Card>
+//         <CardBody height="100%">
+//             <CardTitle>{props.title}</CardTitle>
+//           <hr />
+//           <CardText>{props.description}</CardText>
+//           <hr />
+//         </CardBody>
+//     )
+// }
