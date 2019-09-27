@@ -1,6 +1,8 @@
 import React, {useState, useEffect}from "react";
 import PhotoData from "./PhotoData.js"
 import axios from "axios";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Button,Spinner} from "reactstrap";
    
    export default function PhotoList() {
   const [data, setData] = useState([]);
@@ -20,7 +22,13 @@ import axios from "axios";
 
   return(
       <div className= "space">
+          <Button>Hello World!</Button>
+            <div>
+                <Spinner type= "grow" color="primary" />
+               
+            </div>
           <PhotoData
+
             title={data.title}
             date={data.date}
             url={data.hdurl}
