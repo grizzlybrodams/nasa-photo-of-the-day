@@ -1,15 +1,26 @@
 import React from "react";
 import "./App.css";
+import PhotoList from "./PhotoList";
+import {Badge } from "reactstrap";
 
-function App() {
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-  );
-}
+   function App() {
+     return(
+       <div className="headertitle">
+         <h1><Badge color="danger">NASA APOD</Badge> </h1>
+         <PhotoList/>
 
-export default App;
+       
+       
+       
+       
+       </div>
+
+
+     )
+   }
+  
+ 
+  
+
+export default App
+ 
